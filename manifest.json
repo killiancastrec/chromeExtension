@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+  
+    "name": "anx_scan",
+    "description": "anx scanner",
+    "version": "1.0",
+  
+    "browser_action": {
+     "default_icon": "annexx.png",
+     "default_popup": "popup.html"
+    },
+    "permissions": [
+     "activeTab"
+    ],
+    "content_scripts": [
+       {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": ["content.js"]
+       }
+     ]
+}
